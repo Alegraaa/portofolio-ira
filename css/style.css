@@ -26,3 +26,26 @@ header {
 .about p {
     line-height: 1.6;
 }
+
+.gallery {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.gallery h2 {
+    color: #2c3e50;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
