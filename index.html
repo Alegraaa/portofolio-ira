@@ -3,50 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Ira</title>
+    <title>Portofolio | Nur Ira Lestari</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:ital,wght@0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Nur Ira Lestari</h1>
-        <p>Mahasiswa Sistem Informasi</p>
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1>My Portofolio</h1>
     </header>
 
-    <section class="about">
-        <h2>Tentang Saya</h2>
-        <p>Saya adalah mahasiswa Sistem Informasi yang tertarik pada pengembangan web dan teknologi. Portofolio ini dibuat untuk menampilkan proyek-proyek yang telah saya kerjakan.</p>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-photo">
+            <img src="images/profil.jpg" alt="Foto Nur Ira Lestari">
+        </div>
+        <div class="about-text">
+            <p class="eyebrow">About</p>
+            <h2>me</h2>
+            <p>Hi! Saya <strong>Nur Ira Lestari</strong> mahasiswi semester 4 Program Studi D3 <strong>Sistem Informasi</strong> dengan minat pada bidang <strong>UI/UX Design</strong>, dan <strong>sistem informasi</strong>. Terbiasa bekerja secara terorganisir, dan mampu berkolaborasi dalam tim. Memiliki keinginan kuat untuk terus <strong>mengembangkan keterampilan</strong> dan mengikuti perkembangan teknologi terkini.</p>
+
+            <h3>Education</h3>
+            <ul class="education-list">
+                <li>
+                    <span class="edu-name">Politeknik Negeri Banjarmasin</span>
+                    <span class="edu-year">2024 – Sekarang</span>
+                </li>
+                <li>
+                    <span class="edu-name">SMKN 2 Banjarmasin</span>
+                    <span class="edu-year">2021 – 2024</span>
+                </li>
+            </ul>
+        </div>
     </section>
-    <section class="gallery">
-    <h2>Proyek Saya</h2>
-    <div class="gallery-grid">
-        <div class="gallery-item">
-            <h3>Proyek 1</h3>
-            <p>Deskripsi singkat proyek pertama yang pernah dikerjakan.</p>
-        </div>
-        <div class="gallery-item">
-            <h3>Proyek 2</h3>
-            <p>Deskripsi singkat proyek kedua yang pernah dikerjakan.</p>
-        </div>
-        <div class="gallery-item">
-            <h3>Proyek 3</h3>
-            <p>Deskripsi singkat proyek ketiga yang pernah dikerjakan.</p>
-        </div>
-    </div>
-</section>
-<section class="contact">
-    <h2>Hubungi Saya</h2>
-    <form>
-        <label for="name">Nama:</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <!-- SKILLS -->
+    <section class="skills">
+        <span class="ghost-text ghost-left">My<br>Skill</span>
+        <div class="skills-columns">
+            <div class="skill-block">
+                <h3>Hard Skill</h3>
+                <ul>
+                    <li>Microsoft Office</li>
+                    <li>Canva</li>
+                    <li>Figma</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                </ul>
+            </div>
+            <div class="skill-block">
+                <h3>Soft Skill</h3>
+                <ul>
+                    <li>Komunikasi</li>
+                    <li>Kerja Sama Tim</li>
+                    <li>Manajemen Waktu</li>
+                </ul>
+            </div>
+        </div>
+        <span class="ghost-text ghost-right">My<br>Skill</span>
+    </section>
 
-        <label for="message">Pesan:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+    <!-- PROJECT GALLERY -->
+    <section class="gallery" id="projects">
+        <div class="gallery-preview">
+            <a class="preview-card" href="#project-laravel">
+                <img src="images/laravel-products.png" alt="Preview Laravel Online Store">
+                <span class="view-btn">View Project</span>
+            </a>
+            <a class="preview-card" href="#project-eduquestify">
+                <img src="images/eduquestify-login.png" alt="Preview EduQuestify">
+                <span class="view-btn">View Project</span>
+            </a>
+            <a class="preview-card" href="#project-gyaruss">
+                <img src="images/gyaruss-hero.png" alt="Preview Gyaruss Cake">
+                <span class="view-btn">View Project</span>
+            </a>
+        </div>
 
-        <button type="submit">Kirim</button>
-    </form>
-</section>
+        <!-- Gyaruss Cake -->
+        <article class="project" id="project-gyaruss">
+            <div class="project-top">
+                <div class="project-info">
+                    <h2>Gyaruss Cake</h2>
+                    <p class="project-tag">E-Commerce Website &nbsp;·&nbsp; UI/UX Design</p>
+                    <p class="project-desc">Proyek akademik UI/UX untuk sistem pemesanan online UMKM kuliner Gyaruss Cake di Banjarmasin, menggantikan pemesanan manual via WhatsApp dengan fitur Login-free Shopping Cart, WhatsApp-based Checkout, dan halaman admin untuk kelola produk, pesanan, dan ulasan. Desain responsif dibuat dengan Bootstrap 5, dikerjakan dalam tim menggunakan Figma, Bootstrap 5, dan Visual Studio Code.</p>
+                    <div class="project-meta">
+                        <div><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg><span><span class="meta-label">Role</span><span>UI/UX Design</span></span></div>
+                        <div><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8.5" cy="8.5" r="2.8"/><circle cx="16" cy="9" r="2.3"/><path d="M3.5 19c0-3 2.5-5.2 5.7-5.2 2 0 3.7.9 4.6 2.3"/><path d="M14 15.5c.8-.6 1.8-1 3-1 2.6 0 4.5 1.9 4.5 4.5"/></svg><span><span class="meta-label">Team</span><span>3 Orang</span></span></div>
+                        <div><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3l3 3-8.4 8.4-3.6.6.6-3.6z"/><path d="M13 8l3 3"/></svg><span><span class="meta-label">Tools</span><span>Figma</span></span></div>
+                    </div>
+                </div>
+                <div class="project-hero-img">
+                    <img src="images/gyaruss-hero.png" alt="Tampilan beranda Gyaruss Cake">
+                </div>
+            </div>
+            <div class="project-detail-grid">
+                <img src="images/gyaruss-menu.png" alt="Menu Gyaruss Cake">
+                <img src="images/gyaruss-ulasan.png" alt="Ulasan Gyaruss Cake">
+                <img src="images/gyaruss-keranjang.png" alt="Keranjang belanja Gyaruss Cake">
+            </div>
+        </article>
+
+        <!-- EduQuestify -->
+        <article class="project" id="project-eduquestify">
+            <div class="project-top reverse">
+                <div class="project-phones">
+                    <img src="images/eduquestify-login.png" alt="Login EduQuestify">
+                    <img src="images/eduquestify-dashboard.png" alt="Dashboard EduQuestify">
+                </div>
+                <div class="project-info">
+                    <h2>EduQuestify</h2>
+                    <p class="project-tag">Mobile App &nbsp;·&nbsp; UI/UX Design</p>
+                    <p class="project-desc">Sistem informasi edukasi berbasis gamifikasi (poin EXP, level, misi) untuk IT FEST 2025 bersama Tim Syntara, dirancang agar aktivitas belajar mahasiswa lebih interaktif dan memotivasi. Merancang High-Fidelity UI responsif untuk peran Mahasiswa dan Dosen dengan pendekatan User-Centered Design, menggunakan Figma, FigJam, dan Prototyping.</p>
+                    <div class="project-meta">
+                        <div><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg><span><span class="meta-label">Role</span><span>UI/UX Design</span></span></div>
+                        <div><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8.5" cy="8.5" r="2.8"/><circle cx="16" cy="9" r="2.3"/><path d="M3.5 19c0-3 2.5-5.2 5.7-5.2 2 0 3.7.9 4.6 2.3"/><path d="M14 15.5c.8-.6 1.8-1 3-1 2.6 0 4.5 1.9 4.5 4.5"/></svg><span><span class="meta-label">Team</span><span>3 Orang</span></span></div>
+                        <div><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3l3 3-8.4 8.4-3.6.6.6-3.6z"/><path d="M13 8l3 3"/></svg><span><span class="meta-label">Tools</span><span>Figma</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Laravel Online Store -->
+        <article class="project" id="project-laravel">
+            <div class="project-top">
+                <div class="project-info">
+                    <h2>Laravel Online Store</h2>
+                    <p class="project-tag">Web Development &nbsp;·&nbsp; Laravel</p>
+                    <p class="project-desc">A Laravel Online Store adalah website e-commerce yang dikembangkan secara individu untuk mata kuliah Pemrograman Web, dibangun menggunakan Laravel (PHP) dan MySQL dengan pola arsitektur MVC. Website ini memungkinkan pengguna menjelajahi katalog produk, menambahkan barang ke keranjang, melakukan checkout, serta melihat riwayat dan status pesanan, sementara admin dapat login untuk mengelola stok dan data produk secara penuh (CRUD). Proyek ini dikerjakan sepenuhnya sendiri, mulai dari perancangan database, pengembangan backend, hingga tampilan.</p>
+                    <div class="project-meta">
+                        <div><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg><span><span class="meta-label">Role</span><span>Fullstack Developer</span></span></div>
+                        <div><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8.5" cy="8.5" r="2.8"/><circle cx="16" cy="9" r="2.3"/><path d="M3.5 19c0-3 2.5-5.2 5.7-5.2 2 0 3.7.9 4.6 2.3"/><path d="M14 15.5c.8-.6 1.8-1 3-1 2.6 0 4.5 1.9 4.5 4.5"/></svg><span><span class="meta-label">Type</span><span>Individual Project</span></span></div>
+                        <div><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3l3 3-8.4 8.4-3.6.6.6-3.6z"/><path d="M13 8l3 3"/></svg><span><span class="meta-label">Tech Tools</span><span>Laravel, PHP, MySQL</span></span></div>
+                    </div>
+                </div>
+                <div class="project-hero-img">
+                    <img src="images/laravel-products.png" alt="Daftar produk Laravel Online Store">
+                </div>
+            </div>
+            <div class="project-detail-grid two-col">
+                <img src="images/laravel-login.png" alt="Halaman login Laravel Online Store">
+                <img src="images/laravel-home.png" alt="Halaman beranda Laravel Online Store">
+            </div>
+        </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Hubungi Saya</h2>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Nur Ira Lestari</p>
+    </footer>
+
 </body>
 </html>
